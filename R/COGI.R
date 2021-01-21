@@ -49,8 +49,8 @@
 
 
 cogi <- function(data, targets = c(70,180)){
-  x = target_val = id = NULL
-  rm(list = c("id", "target_val", "x"))
+  w_f = ir = br = stddev = id = weight_features = feature = scale_range = weight = NULL
+  rm(list = c("id", "w_f", "ir", "br", "stddev", "id", "weight_features", "feature", "scale_range", "weight"))
   data = check_data_columns(data)
   is_vector = attr(data, "is_vector")
   targets = sort(as.double(targets))
